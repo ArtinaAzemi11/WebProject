@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klasat - FitGym</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Ikona Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- CSS Personal -->
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  
+  <style>
+    .class-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+    .class-card:hover {
+      transform: translateY(-6px);
+    }
+    .class-icon {
+      font-size: 2rem;
+      color: var(--primary, #007bff);
+    }
+    .cta-section {
+      background: #f5f5f5;
+      padding: 60px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg" class="me-2">
+          <rect width="24" height="24" rx="6" fill="var(--primary)" />
+          <path d="M7 12h10" stroke="white" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div style="line-height:1">Fit<span class="d-block"><strong>Gym</strong></span></div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Ballina</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutUs.html">Rreth Nesh</a></li>
+          <li class="nav-item"><a class="nav-link active" href="klasat.html">Klasat</a></li>
+          <li class="nav-item"><a class="nav-link" href="pakot.html">Pakot</a></li>
+          <li class="nav-item"><a class="nav-link" href="lokacionet.html">Lokacionet</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+          <li class="nav-item ms-3 d-none d-lg-block">
+            <a class="btn btn-primary" href="#">Rezervoje Trajnerin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Klasat në FitGym</h1>
+      <p class="lead">Zgjidh klasën që të përshtatet – nga yoga deri te HIIT!</p>
+    </div>
+  </header>
+
+  <!-- Klasat -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-dumbbell"></i></div>
+            <h5>Strength Training</h5>
+            <p class="text-muted">Fokus në rritjen e forcës, muskujve dhe stabilitetit përmes programeve të avancuara.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-running"></i></div>
+            <h5>HIIT</h5>
+            <p class="text-muted">Intensive dhe dinamike. Djeg kalori shpejt dhe rrit rezistencën.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-child"></i></div>
+            <h5>Yoga</h5>
+            <p class="text-muted">Për fleksibilitet, frymëmarrje dhe balancë mendje-trup. E përshtatshme për të gjithë.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-bicycle"></i></div>
+            <h5>Spin Class</h5>
+            <p class="text-muted">Kardio intensive në biçikletë me muzikë motivuese dhe instruktorë energjikë.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-heartbeat"></i></div>
+            <h5>Functional Fitness</h5>
+            <p class="text-muted">Lëvizje reale, performancë reale. Përmirëso përditshmërinë dhe qëndrueshmërinë.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="class-card text-center">
+            <div class="class-icon mb-3"><i class="fas fa-fire-alt"></i></div>
+            <h5>Fat Burn</h5>
+            <p class="text-muted">Klasa të fokusuara në djegien e yndyrës me intervale dhe kombinime lëvizjesh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fw-bold">Provoni një klasë falas!</h2>
+      <p class="lead">Rezervoni seancën tuaj të parë me një nga trajnerët tanë profesionistë.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg mt-3">Kontaktoni Tani</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">Na ndiqni në rrjete sociale:</p>
+      <div class="mb-3">
+        <a href="#" class="text-light mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+      <p class="small mb-0">© 2025 FitGym. Të gjitha të drejtat të rezervuara.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
