@@ -40,6 +40,26 @@
       background: var(--primary);
       color: #cbd5e1;
     }
+
+    .custom-caption {
+  left: 5%;
+  right: auto;
+  bottom: 25%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+.custom-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.custom-caption p {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-bottom: 1rem;
+}
   </style>
 </head>
 <body>
@@ -79,31 +99,60 @@
 
   <!-- Slider -->
   <section id="home">
-    <div id="fitnessCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../Photos/photo1.jpg" class="d-block w-100" alt="Foto 1">
-        </div>
-        <div class="carousel-item">
-          <img src="../Photos/photo5.jpg" class="d-block w-100" alt="Foto 2">
-        </div>
-        <div class="carousel-item">
-          <img src="../Photos/photo6.jpg" class="d-block w-100" alt="Foto 3">
-        </div>
-      
-      <div class="carousel-item">
-          <img src="../Photos/photo3.jpg" class="d-block w-100" alt="Foto 3">
+  <div id="fitnessCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active position-relative">
+        <img src="../Photos/photo1.jpg" class="d-block w-100" alt="Foto 1">
+        <div class="carousel-caption d-none d-md-block text-start custom-caption">
+          <h2>Mirësevini në FitGym!</h2>
+          <p>Transformo trupin tënd me ne.</p>
+          <a href="pakot.html" class="btn custom-btn">Ofertat</a>
         </div>
       </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item position-relative">
+        <img src="../Photos/photo5.jpg" class="d-block w-100" alt="Foto 2">
+        <div class="carousel-caption d-none d-md-block text-start custom-caption">
+          <h2>Trajnerë Profesionistë</h2>
+          <p>Ne jemi këtu për suksesin tënd.</p>
+          <a href="aboutUs.html" class="btn custom-btn">Rreth Nesh</a>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#fitnessCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#fitnessCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item position-relative">
+        <img src="../Photos/photo6.jpg" class="d-block w-100" alt="Foto 3">
+        <div class="carousel-caption d-none d-md-block text-start custom-caption">
+          <h2>Klasat për çdo nivel</h2>
+          <p>Fillestar apo i avancuar? Të mirëpresim!</p>
+          <a href="aboutUs.html" class="btn custom-btn">Shiko më shumë</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item position-relative">
+        <img src="../Photos/photo3.jpg" class="d-block w-100" alt="Foto 4">
+        <div class="carousel-caption d-none d-md-block text-start custom-caption">
+          <h2>Lokacione të shumta</h2>
+          <p>Na gjeni kudo në qytet.</p>
+          <a href="aboutUs.html" class="btn custom-btn">Lokacionet</a>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#fitnessCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#fitnessCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
 
   <!-- Karakteristika -->
   <section id="karakteristika" class="py-5">
