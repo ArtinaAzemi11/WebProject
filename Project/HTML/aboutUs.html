@@ -38,45 +38,45 @@
     }
 
     .text-darkblue {
-  color: #0d1b4c; 
-     }
-
+      color: #0d1b4c; 
+    }
   </style>
 
   <script src="../JavaScript/aboutUs.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="homepage.html">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"
-             xmlns="http://www.w3.org/2000/svg" class="me-2">
-          <rect width="24" height="24" rx="6" fill="var(--primary)" />
-          <path d="M7 12h10" stroke="white" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div style="line-height:1">Fit<span class="d-block"><strong>Gym</strong></span></div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="homepage.html">Ballina</a></li>
-          <li class="nav-item"><a class="nav-link active" href="aboutUs.html">Rreth Nesh</a></li>
-          <li class="nav-item"><a class="nav-link" href="klasat.html">Klasat</a></li>
-          <li class="nav-item"><a class="nav-link" href="pakot.html">Pakot</a></li>
-          <li class="nav-item"><a class="nav-link" href="lokacionet.html">Lokacionet</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
-          <li class="nav-item ms-3 d-none d-lg-block">
-            <a class="btn custom-btn" href="#">Rezervoje Trajnerin</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg" class="me-2">
+        <rect width="24" height="24" rx="6" fill="var(--primary)" />
+        <path d="M7 12h10" stroke="white" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div style="line-height:1">Fit<span class="d-block"><strong>Gym</strong></span></div>
+    </a>
 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="homepage.html">Ballina</a></li>
+        <li class="nav-item"><a class="nav-link active" href="aboutUs.html">Rreth Nesh</a></li>
+        <li class="nav-item"><a class="nav-link" href="klasat.html">Klasat</a></li>
+        <li class="nav-item"><a class="nav-link" href="pakot.html">Pakot</a></li>
+        <li class="nav-item"><a class="nav-link" href="lokacionet.html">Lokacionet</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+        <li class="nav-item ms-3 d-none d-lg-block">
+          <a class="btn custom-btn" href="#">Rezervoje Trajnerin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <!-- HERO -->
   <header class="hero py-5">
     <div class="container">
@@ -152,8 +152,8 @@
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="py-5 bg-dark text-white text-center">
+   <!-- STATS -->
+  <section class="py-5 text-white text-center" style="background-color:#0d1b4c;">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-3" data-aos="flip-up"><h3>1200+</h3><p>Trajnime</p></div>
@@ -165,15 +165,26 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-5 text-center">
+  <section class="py-5 text-center text-white" style="background-color:#0d1b4c;">
     <div class="container" data-aos="fade-up">
       <h2 class="mb-3">Bashkohu me revolucionin</h2>
       <p>Provoni 7 ditë falas dhe merrni plan ushqimor të personalizuar.</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Merr 7 Ditë Falas</a>
+      <a href="#contact" class="btn btn-light btn-lg text-dark">Merr 7 Ditë Falas</a>
     </div>
   </section>
 
- 
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">Na ndiq në rrjete sociale</p>
+      <div class="mb-2">
+        <a href="#" class="text-light mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+      <p class="small mb-0">© 2025 FitGym. Të gjitha të drejtat të rezervuara.</p>
+    </div>
+  </footer>
 
   <!-- Scripts -->
   <script src="../JavaScript/include.js"></script>
