@@ -1,0 +1,140 @@
+/* Butoni */
+    .custom-btn {
+      background-color: var(--accent) !important;
+      border-color: var(--accent) !important;
+      color: #fff !important;
+      border-radius: 50px;
+      padding: 0.4rem 1.2rem;
+    }
+    .custom-btn:hover {
+      background-color: #1565c0 !important;
+      border-color: #1565c0 !important;
+    }
+
+    /* Slider */
+    .carousel-item img {
+      object-fit: cover;
+      height: 100vh;
+    }
+
+    /* Karta e veçorive */
+    .feature-card {
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    footer{
+      background: var(--primary);
+      color: #cbd5e1;
+    }
+
+    .custom-caption {
+  left: 5%;
+  right: auto;
+  bottom: 25%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+.custom-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.custom-caption p {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-bottom: 1rem;
+}
+
+/*.feature-card {
+  cursor: pointer;
+}
+
+
+.feature-card h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+
+.feature-card p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}*/
+
+.feature-card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* Stili i titullit */
+.feature-card h5 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Stili i tekstit */
+.feature-card p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Foto e fshehur që shfaqet me hover */
+.feature-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+  border-radius: inherit;
+}
+
+.feature-card:hover .feature-image {
+  opacity: 0.8; /* Mund ta rritësh ose ulësh sipas efektit që do */
+}
+
+/* Siguro që teksti mbetet mbi foton */
+.feature-card h5,
+.feature-card p {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation: slideInLeft 1s ease-out;
+}
