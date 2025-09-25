@@ -25,30 +25,6 @@ body{
 /* CONTAINER */
 .container{max-width:var(--container);margin:0 auto;padding:2rem}
 
-/* NAVBAR */
-.navbar.custom-navbar{
-  background-color: var(--primary);
-}
-.navbar .nav-link{
-  color: var(--muted);
-  transition: color .25s;
-}
-.navbar .nav-link.active, .navbar .nav-link:hover{
-  color: var(--accent);
-}
-.navbar .custom-btn{
-  background: linear-gradient(90deg,var(--accent),#ffa94d);
-  color: #0f1724;
-  font-weight: 600;
-  padding: .6rem 1.2rem;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: all .3s;
-}
-.navbar .custom-btn:hover{
-  opacity: .85;
-}
-
 /* HERO */
 .hero{
   padding: 4rem 0 2rem;

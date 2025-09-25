@@ -13,14 +13,38 @@
 
   <!-- CSS Custom -->
   <link rel="stylesheet" href="../CSS/navbar.css">
-  <link rel="stylesheet" href="../CSS/aboutUs.css">
   <link rel="stylesheet" href="../CSS/footer.css">
 
   <style>
+    /* Background komplet blu e mbyllt */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #0d1b4c; /* blu e mbyllt */
+      color: white; /* tekst i bardhë për kontrast */
+    }
+
     /* Hero */
+    .hero {
+      background-color: #0d1b4c;
+      color: #fff;
+      position: relative;
+    }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
+    }
+
+    .hero p {
+      color: #f1f1f1;
+    }
+
+    /* Seksionet */
+    section {
+      padding: 60px 0;
+      background-color: #0d1b4c; /* gjithmonë blu e mbyllt */
+      color: white;
     }
 
     /* Team - fotot e trajnerëve */
@@ -37,8 +61,24 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
 
-    .text-darkblue {
-      color: #0d1b4c; 
+    /* CTA button */
+    .btn-custom-light {
+      background: #fff;
+      color: #0d1b4c;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 10px 24px;
+      transition: all 0.3s ease;
+    }
+    .btn-custom-light:hover {
+      background: #ffc107;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a1538 !important; /* blu edhe më e mbyllt */
+      color: white;
     }
   </style>
 
@@ -91,45 +131,46 @@
         </div>
       </div>
     </div>
-    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
-      <path d="M0,32 C240,96 480,0 720,32 C960,64 1200,0 1440,32 L1440 80 L0 80 Z" fill="#fff"/>
-    </svg>
   </header>
 
   <!-- MISION -->
-  <section class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-6" data-aos="fade-right">
-        <h2 class="mb-3">Misioni Ynë</h2>
-        <p>Të krijojmë një hapësirë ku çdo individ gjen motivimin, drejtimin dhe mjetet për të ndryshuar trupin dhe mendjen.</p>
-        <ul>
-          <li>Trajnim personal i paketuar</li>
-          <li>Ushtrime funksionale & powerlifting</li>
-          <li>Nutricion i përshtatur</li>
-        </ul>
-      </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <img src="../Photos/photo20.jpg" class="img-fluid rounded shadow" alt="Misioni">
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="mb-3">Misioni Ynë</h2>
+          <p>Të krijojmë një hapësirë ku çdo individ gjen motivimin, drejtimin dhe mjetet për të ndryshuar trupin dhe mendjen.</p>
+          <ul>
+            <li>Trajnim personal i paketuar</li>
+            <li>Ushtrime funksionale & powerlifting</li>
+            <li>Nutricion i përshtatur</li>
+          </ul>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="../Photos/photo20.jpg" class="img-fluid rounded shadow" alt="Misioni">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- VISION -->
-  <section class="container py-5 bg-light">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-md-2 text-darkblue" data-aos="fade-left">
-        <h2 class="mb-3">Vizioni</h2>
-        <p>Të bëhemi qendra #1 për transformim të qëndrueshëm në rajon.</p>
-        <p>Ku standardi është përmirësimi i shëndetit, vetëbesimit dhe performancës.</p>
-      </div>
-      <div class="col-md-6 order-md-1" data-aos="fade-right">
-        <img src="../Photos/photo21.jpg" class="img-fluid rounded shadow" alt="Vizioni">
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2" data-aos="fade-left">
+          <h2 class="mb-3">Vizioni</h2>
+          <p>Të bëhemi qendra #1 për transformim të qëndrueshëm në rajon.</p>
+          <p>Ku standardi është përmirësimi i shëndetit, vetëbesimit dhe performancës.</p>
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right">
+          <img src="../Photos/photo21.jpg" class="img-fluid rounded shadow" alt="Vizioni">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- TEAM -->
-  <section id="team" class="py-5">
+  <section id="team">
     <div class="container text-center">
       <h2 class="mb-3" data-aos="fade-up">Ekipi</h2>
       <p data-aos="fade-up" data-aos-delay="200">Trajnerë të certifikuar, nutricionistë dhe mentorë.</p>
@@ -154,7 +195,7 @@
   </section>
 
    <!-- STATS -->
-  <section class="py-5 text-white text-center" style="background-color:#0d1b4c;">
+  <section class="text-center">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-3" data-aos="flip-up"><h3>1200+</h3><p>Trajnime</p></div>
@@ -166,17 +207,17 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-5 text-center text-white" style="background-color:#0d1b4c;">
+  <section class="text-center">
     <div class="container" data-aos="fade-up">
       <h2 class="mb-3">Bashkohu me revolucionin</h2>
       <p>Provoni 7 ditë falas dhe merrni plan ushqimor të personalizuar.</p>
-      <a href="contact.html" class="btn btn-light btn-lg text-dark">Merr 7 Ditë Falas</a>
+      <a href="contact.html" class="btn btn-custom-light btn-lg">Merr 7 Ditë Falas</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
+  <footer class="py-4 text-center">
+    <div class="container">
       <p class="mb-1">Na ndiq në rrjete sociale</p>
       <div class="mb-2">
         <a href="#" class="text-light mx-2"><i class="fab fa-facebook fa-lg"></i></a>
