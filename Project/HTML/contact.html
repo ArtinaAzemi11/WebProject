@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../CSS/navbar.css">
   <link rel="stylesheet" href="../CSS/footer.css">
 
+  <script src="../JavaScript/contact.js"></script>
+
   <style>
     body {
       background: linear-gradient(135deg, #0d1b2a, #1b263b);
@@ -90,6 +92,11 @@
       color: #00bfff;
     }
 
+    .error-message {
+  font-size: 0.875rem;
+  color: #ff4d4d;
+}
+
     @media (max-width: 768px) {
       .contact-card {
         padding: 25px;
@@ -110,10 +117,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="homepage.html">Ballina</a></li>
-        <li class="nav-item"><a class="nav-link" href="aboutUs.html">Rreth Nesh</a></li>
-        <li class="nav-item"><a class="nav-link" href="klasat.html">Klasat</a></li>
-        <li class="nav-item"><a class="nav-link" href="pakot.html">Pakot</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutUs.html">Rreth Nesh</a></li>
+          <li class="nav-item"><a class="nav-link" href="klasat.html">Klasat</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pakot.html">Pakot</a></li>
+          <li class="nav-item"><a class="nav-link" href="lokacionet.html">Lokacionet</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+          <li class="nav-item ms-3 d-none d-lg-block">
+            <a class="btn custom-btn" href="#">Rezervoje Trajnerin</a>
+          </li>
       </ul>
     </div>
   </div>
@@ -126,19 +137,24 @@
       <div class="col-lg-8">
         <div class="contact-card">
           <h2 class="text-center">Na Kontakto</h2>
-          <form>
+          <form id="contactForm">
             <div class="mb-3">
-              <label for="name" class="form-label">Emri</label>
-              <input type="text" class="form-control" id="name" placeholder="Shkruaj emrin tuaj">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email-i</label>
-              <input type="email" class="form-control" id="email" placeholder="Shkruaj email-in tuaj">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Mesazhi</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Shkruaj mesazhin tuaj..."></textarea>
-            </div>
+  <label for="name" class="form-label">Emri</label>
+  <input type="text" class="form-control" id="name" placeholder="Shkruaj emrin tuaj">
+  <div class="error-message text-danger small mt-1" id="nameError"></div>
+</div>
+
+<div class="mb-3">
+  <label for="email" class="form-label">Email-i</label>
+  <input type="email" class="form-control" id="email" placeholder="Shkruaj email-in tuaj">
+  <div class="error-message text-danger small mt-1" id="emailError"></div>
+</div>
+
+<div class="mb-3">
+  <label for="message" class="form-label">Mesazhi</label>
+  <textarea class="form-control" id="message" rows="5" placeholder="Shkruaj mesazhin tuaj..."></textarea>
+  <div class="error-message text-danger small mt-1" id="messageError"></div>
+</div>
             <div class="text-center">
               <button type="submit" class="btn btn-send">Dergo Mesazhin</button>
             </div>
